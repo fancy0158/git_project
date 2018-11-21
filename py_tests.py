@@ -15,7 +15,7 @@ class TestClass(unittest.TestCase):
 	def test_case(self):
 		self.driver.get(self.base_url)
 		search_input = self.driver.find_element_by_name("q")
-		search_input.send_keys("selenium")
+		search_input.send_keys("appium")
 		search_input.submit()
 
 	def test_case2(self):
