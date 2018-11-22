@@ -16,18 +16,21 @@ class TestClass(unittest.TestCase):
 		self.driver.get(self.base_url)
 		search_input = self.driver.find_element_by_name("q")
 		search_input.send_keys("appium")
+		time.sleep(2)
 		search_input.submit()
 
 	def test_case2(self):
 		self.driver.get(self.base_url)
 		search_input = self.driver.find_element_by_name("q")
 		search_input.send_keys("jenkins")
+		time.sleep(2)
 		search_input.submit()
 		
 	def test_case3(self):
 		self.driver.get(self.base_url)
 		search_input = self.driver.find_element_by_name("q")
 		search_input.send_keys("GitHub")
+		time.sleep(2)
 		search_input.submit()
 
 if __name__ == '__main__':
