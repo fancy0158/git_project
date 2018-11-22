@@ -23,7 +23,12 @@ class TestClass(unittest.TestCase):
 		search_input = self.driver.find_element_by_name("q")
 		search_input.send_keys("jenkins")
 		search_input.submit()
-
+		
+	def test_case3(self):
+		self.driver.get(self.base_url)
+		search_input = self.driver.find_element_by_name("q")
+		search_input.send_keys("GitHub")
+		search_input.submit()
 
 if __name__ == '__main__':
 	unittest.main()
